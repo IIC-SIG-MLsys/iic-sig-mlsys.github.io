@@ -1,15 +1,16 @@
 menu:
-- {name: '实验室人员', url: '/people'}
+- {name: '人员', url: '/people'}
 - {name: '科研项目', url: '/projects'}
-- {name: '论文出版', url: '/publications'}
+- {name: '论文发表', url: '/publications'}
 - {name: '联系我们', url: '/contact'}
 
 people:
-- {name: '胡鹏飞', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'hello@university.edu', image: '', url: 'perfecthu.github.io'}
-- {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'hello@university.edu', image: '', url: 'kobesi.github.io'}
+- {name: '胡鹏飞', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'phu@sdu.edu.cn', image: 'https://perfecthu.github.io/index_files/photo.jpg', url: 'https://perfecthu.github.io'}
+- {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'siwu5938@gmail.com', image: 'https://kobesi.github.io/wusi.png', url: 'https://kobesi.github.io'}
+- {name: '李峰', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'fli@sdu.edu.cn', image: 'https://funglee.github.io/images/fli2.jpeg', url: 'https://funglee.github.io'}
 
 social:
 - {icon: 'github', link: 'https://github.com/IIC-SIG-MLsys'}
 
 contacts:
-- {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'hello@university.edu', image: '', url: 'kobesi.github.io'}
+- {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'siwu5938@gmail.com', url: 'kobesi.github.io'}
