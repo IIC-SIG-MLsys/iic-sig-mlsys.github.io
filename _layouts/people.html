@@ -5,15 +5,25 @@ layout: default
 {{ content }}
 
 <h3 class="fw-bold border-bottom pb-3 mb-5">People</h3>
-{% for person in site.data.settings.people %}
-<div class="row g-5 mb-5">
-  <div class="col-md-6">
-    <h5>{{ person.name }} {{ person.title }}</h5>
-    <p>Email: {{ person.email }}</p>
-    <p><a href="{{ person.url }}">More info</a></p>
+
+<div class="row g-4">
+  {% for person in site.data.settings.people %}
+  <div class="col-12 col-md-6">
+    <div class="card h-100 border-0">
+      <!-- 照片在前 -->
+      <img
+        src="{{ person.image }}"
+        alt="{{ person.name }}"
+        style="width:100%; aspect-ratio:4/3; object-fit:cover; display:block; border-radius:0.5rem;"
+      >
+
+      <!-- 文字介绍在后 -->
+      <div class="card-body">
+        <h5 class="card-title mb-2">{{ person.name }} {{ person.title }}</h5>
+        <p class="mb-1">Email: <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+        <p class="mb-0"><a href="{{ person.url }}" target="_blank" rel="noopener">个人主页</a></p>
+      </div>
+    </div>
   </div>
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/{{ person.image }}" alt="Contact" width="100%">
-  </div>
+  {% endfor %}
 </div>
-{% endfor %}
