@@ -10,7 +10,6 @@ people:
 
 social:
 - {icon: 'github', link: 'https://github.com/IIC-SIG-MLsys'}
-- {icon: 'wechat', link: 'https://github.com/IIC-SIG-MLsys'}
 
 contacts:
 - {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'hello@university.edu', image: '', url: 'kobesi.github.io'}
