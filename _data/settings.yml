@@ -1,16 +1,16 @@
 menu:
-- {name: '人员', url: '/people'}
-- {name: '项目', url: '/projects'}
-- {name: '出版物', url: '/publications'}
-- {name: '联系', url: '/contact'}
+- {name: '实验室人员', url: '/people'}
+- {name: '科研项目', url: '/projects'}
+- {name: '论文出版', url: '/publications'}
+- {name: '联系我们', url: '/contact'}
 
 people:
-- {name: '胡鹏飞', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', institution_address: '山东省青岛市即墨区滨海路', email: 'hello@university.edu', image: '', url: 'perfecthu.github.io'}
-- {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', institution_address: '山东省青岛市即墨区滨海路', email: 'hello@university.edu', image: '', url: 'kobesi.github.io'}
+- {name: '胡鹏飞', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'hello@university.edu', image: '', url: 'perfecthu.github.io'}
+- {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'hello@university.edu', image: '', url: 'kobesi.github.io'}
 
 social:
 - {icon: 'github', link: 'https://github.com/IIC-SIG-MLsys'}
 - {icon: 'wechat', link: 'https://github.com/IIC-SIG-MLsys'}
 
 contacts:
-- {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', institution_address: '山东省青岛市即墨区滨海路', email: 'hello@university.edu', image: '', url: 'kobesi.github.io'}
+- {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'hello@university.edu', image: '', url: 'kobesi.github.io'}
