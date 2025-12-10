@@ -3,15 +3,11 @@ layout: page
 title: "Graduate Student"
 ---
 
-Researcher - Physics & Astronomy
+学生 - 研究方向
 
-Some University - 1 Main Street, Canada
+山东大学
 
-Phone: (000) 000-0000
-
-Email: hello@university.edu
-
-Office: Science Building 505
+邮箱: hello@university.edu
 
 ---
 

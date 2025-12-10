@@ -4,7 +4,7 @@ layout: default
 
 <div class="row g-5 mb-5">
   <div class="col-md-6">
-    <h3 class="fw-bold">Research</h3>
+    <h3 class="fw-bold">实验室简介</h3>
     {{ content }}
   </div>
   <div class="col-md-6">
@@ -12,13 +12,15 @@ layout: default
   </div>
 </div>
 
-{% include publications.html %}
 
 <div class="row g-5 mb-5">
   <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">News</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">最新进展</h3>
     {% for post in site.posts %}
       <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
     {% endfor %}
   </div>
 </div>
+
+
+{% include publications.html %}
