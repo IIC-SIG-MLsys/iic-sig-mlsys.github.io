@@ -4,18 +4,18 @@ layout: default
 
 {{ content }}
 
-<h3 class="fw-bold border-bottom pb-3 mb-5">导师团队</h3>
+<h3 class="fw-bold border-bottom pb-3 mt-5">导师团队</h3>
 
 <div class="row g-4">
   {% for person in site.data.settings.teacher %}
   <div class="col-12 col-md-6">
-    <div class="border rounded-4 p-3 h-100">
+    <div class="rounded-4 p-3 h-100">
       <div class="row g-3 align-items-center">
         <div class="col-3">
           <img
             src="{{ person.image }}"
             alt="{{ person.name }}"
-            style="width:100%; max-width:110px; aspect-ratio:1/1; object-fit:cover; display:block; border-radius:0.75rem;"
+            style="width:100%; max-width:130px; object-fit:cover; display:block;"
           >
         </div>
 
@@ -34,13 +34,13 @@ layout: default
   {% endfor %}
 </div>
 
-<h3 class="fw-bold border-bottom pb-3 mb-5">在读学生</h3>
+<h3 class="fw-bold border-bottom pb-3 mt-5">在读学生</h3>
 
 <div class="row g-4">
   {% for person in site.data.settings.student %}
   <!-- 小屏1列，中屏2列，大屏3列 -->
   <div class="col-12 col-md-6 col-lg-4">
-    <div class="border rounded-4 p-3 h-100">
+    <div class="rounded-4 p-3 h-100">
       <div class="row g-3 align-items-center">
         <div class="col-md-8">
           <h5 class="mb-2">{{ person.name }} {{ person.title }}</h5>
