@@ -9,17 +9,17 @@ layout: default
 <div class="row g-4">
   {% for person in site.data.settings.teacher %}
   <div class="col-12 col-md-6">
-    <div class="border rounded-4 p-3 h-100"">
+    <div class="border rounded-4 p-3 h-100">
       <div class="row g-3 align-items-center">
-        <div class="col-4">
+        <div class="col-3">
           <img
             src="{{ person.image }}"
             alt="{{ person.name }}"
-            style="width:100%; object-fit:cover;"
+            style="width:100%; max-width:110px; aspect-ratio:1/1; object-fit:cover; display:block; border-radius:0.75rem;"
           >
         </div>
 
-        <div class="col-8">
+        <div class="col-9">
           <h5 class="mb-2">{{ person.name }} {{ person.title }}</h5>
           <p class="mb-1">
             Email: <a href="mailto:{{ person.email }}">{{ person.email }}</a>
@@ -42,15 +42,7 @@ layout: default
   <div class="col-12 col-md-6 col-lg-4">
     <div class="border rounded-4 p-3 h-100">
       <div class="row g-3 align-items-center">
-        <div class="col-4">
-          <img
-            src="{{ person.image }}"
-            alt="{{ person.name }}"
-            style="width:100%; object-fit:cover; display:block; border-radius:0.75rem;"
-          >
-        </div>
-
-        <div class="col-8">
+        <div class="col-md-8">
           <h5 class="mb-2">{{ person.name }} {{ person.title }}</h5>
           <p class="mb-1">
             Email: <a href="mailto:{{ person.email }}">{{ person.email }}</a>
