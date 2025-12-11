@@ -6,8 +6,8 @@ menu:
 
 teacher:
 - {name: '胡鹏飞', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'phu@sdu.edu.cn', image: 'https://perfecthu.github.io/index_files/photo.jpg', url: 'https://perfecthu.github.io'}
-- {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'siwu5938@gmail.com', image: 'https://kobesi.github.io/wusi.png', url: 'https://kobesi.github.io'}
 - {name: '李峰', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'fli@sdu.edu.cn', image: 'https://funglee.github.io/images/fli2.jpeg', url: 'https://funglee.github.io'}
+- {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'siwu5938@gmail.com', image: 'https://kobesi.github.io/wusi.png', url: 'https://kobesi.github.io'}
 
 student:
 - {name: '李超群', title: '三年级博士生', email: 'chaoqunli@mail.sdu.edu.cn', url: 'https://supergroupli.github.io/chaoqunli/'}
