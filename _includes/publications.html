@@ -1,7 +1,7 @@
 <div class="row g-5 mb-5">
   <div>
     {% if page.title == "Home" %}
-    <h3 class="fw-bold border-bottom pb-3 mb-5">主要学术论文</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">最新学术论文</h3>
       {% for item in site.data.publications.featured %}
         <p><a href="{{ item.url }}">{{ item.name }}</a></p>
       {% endfor %}
