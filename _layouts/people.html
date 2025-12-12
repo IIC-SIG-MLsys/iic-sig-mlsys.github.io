@@ -41,23 +41,22 @@ layout: default
   <div class="col-12 col-md-6 col-lg-4">
     <div class="rounded-4 p-3 h-100">
       <div class="row g-3 align-items-start">
-        <!-- 名字保持稍大，title 部分字体缩小 -->
         <h5 class="mb-2">
           {{ person.name }}
           {% if person.title %}<small class="text-muted">{{ person.title }}</small>{% endif %}
         </h5>
 
-        {% if person.email != '' %}
+        {% unless person.email == blank %}
         <p class="mb-1">
           Email: <a href="mailto:{{ person.email }}">{{ person.email }}</a>
         </p>
-        {% endif %}
+        {% endunless %}
 
-        {% if person.url != '' %}
+        {% unless person.url == blank %}
         <p class="mb-0">
           <a href="{{ person.url }}" target="_blank" rel="noopener">个人主页</a>
         </p>
-        {% endif %}
+        {% endunless %}
       </div>
     </div>
   </div>
