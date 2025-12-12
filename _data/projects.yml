@@ -1,10 +1,5 @@
-featured:
-- {name: '', url: '/publications/1501.07274.pdf'}
-- {name: '', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/PhilTransRSoc_2013.pdf'}
-- {name: '', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/jcp_v414.pdf'}
-
 index:
-- {name: '', url: '/publications/1501.07274.pdf'}
-- {name: 'n', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/PhilTransRSoc_2013.pdf'}
-- {name: '', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/jcp_v414.pdf'}
-- {name: 'l', url: 'https://static1.squarespace.com/static/5684891d7086d74497aeb71f/t/56ec510d2fe1319543ab6d6f/1458327821946/10.1140-epje-i2012-12114-x.pdf'}
+- {name: '异构GPU并行加速技术', url: 'https://github.com/IIC-SIG-MLsys/HMC'}
+- {name: 'more.', url: ''}
+- {name: 'more.', url: ''}
+- {name: 'more.', url: ''}
