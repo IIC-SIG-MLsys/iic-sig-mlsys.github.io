@@ -47,13 +47,13 @@ layout: default
           {% if person.title %}<small class="text-muted">{{ person.title }}</small>{% endif %}
         </h5>
 
-        {% if person.email != blank %}
+        {% if person.email != '' %}
         <p class="mb-1">
           Email: <a href="mailto:{{ person.email }}">{{ person.email }}</a>
         </p>
         {% endif %}
 
-        {% if person.url != blank %}
+        {% if person.url != '' %}
         <p class="mb-0">
           <a href="{{ person.url }}" target="_blank" rel="noopener">个人主页</a>
         </p>
