@@ -13,19 +13,19 @@ teacher:
 student:
 - {name: '李超群', title: '三年级博士生', email: 'chaoqunli@mail.sdu.edu.cn', url: 'https://supergroupli.github.io/chaoqunli/'}
 - {name: '刘晋尧', title: '二年级博士生', email: 'jacelau@mail.sdu.edu.cn', url: 'https://seclee.com'}
-- {name: '李少伟', title: '二年级博士生', email: 'lishaowei6208@mail.sdu.edu.cn', url: ''}
-- {name: '于红靖', title: '一年级博士生', email: 'yuhj@mail.sdu.edu.cn', url: ''}
-- {name: '贾丁毅', title: '一年级博士生', email: '202521596@mail.sdu.edu.cn', url: ''}
-- {name: '张智森', title: '二年级硕士生', email: '', url: ''}
-- {name: '马浩原', title: '二年级硕士生', email: '', url: ''}
-- {name: '孙中远', title: '二年级硕士生', email: '', url: ''}
-- {name: '王旭', title: '二年级硕士生', email: '', url: ''}
-- {name: '陈鹏宇', title: '二年级硕士生', email: '', url: ''}
-- {name: '刘念友', title: '二年级硕士生', email: '', url: ''}
-- {name: '白帅', title: '一年级硕士生', email: '', url: ''}
-- {name: '王清恒', title: '一年级硕士生', email: '', url: ''}
-- {name: '杨树', title: '一年级硕士生', email: '', url: ''}
-- {name: '盛柄涵', title: '一年级硕士生', email: '', url: ''}
+- {name: '李少伟', title: '二年级博士生', email: 'lishaowei6208@mail.sdu.edu.cn', url: '/'}
+- {name: '于红靖', title: '一年级博士生', email: 'yuhj@mail.sdu.edu.cn', url: '/'}
+- {name: '贾丁毅', title: '一年级博士生', email: '202521596@mail.sdu.edu.cn', url: '/'}
+- {name: '张智森', title: '二年级硕士生', email: '', url: '/'}
+- {name: '马浩原', title: '二年级硕士生', email: '', url: '/'}
+- {name: '孙中远', title: '二年级硕士生', email: '', url: '/'}
+- {name: '王旭', title: '二年级硕士生', email: '', url: '/'}
+- {name: '陈鹏宇', title: '二年级硕士生', email: '', url: '/'}
+- {name: '刘念友', title: '二年级硕士生', email: '', url: '/'}
+- {name: '白帅', title: '一年级硕士生', email: '', url: '/'}
+- {name: '王清恒', title: '一年级硕士生', email: '', url: '/'}
+- {name: '杨树', title: '一年级硕士生', email: '', url: '/'}
+- {name: '盛柄涵', title: '一年级硕士生', email: '', url: '/'}
 
 social:
 - {icon: 'github', link: 'https://github.com/IIC-SIG-MLsys'}
