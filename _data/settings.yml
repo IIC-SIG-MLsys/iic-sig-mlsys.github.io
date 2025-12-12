@@ -8,11 +8,24 @@ teacher:
 - {name: '胡鹏飞', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'phu@sdu.edu.cn', image: 'https://perfecthu.github.io/index_files/photo.jpg', url: 'https://perfecthu.github.io'}
 - {name: '李峰', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'fli@sdu.edu.cn', image: 'https://funglee.github.io/images/fli2.jpeg', url: 'https://funglee.github.io'}
 - {name: '吴思', title: '教授', department: '计算机科学与技术学院', institution: '山东大学', email: 'siwu5938@gmail.com', image: 'https://kobesi.github.io/wusi.png', url: 'https://kobesi.github.io'}
+- {name: '于勇波', title: '助理教授', department: '人工智能学院', institution: '山东大学', email: 'yongbo.yu@sdu.edu.cn', image: 'https://aisearch.sdu.edu.cn/ai_service/filesystem/ope/thumbnail/51589e6f-4726-4bbd-9d72-ff6ee060b76b.png?width=500&height=500', url: 'https://faculty.sdu.edu.cn/yuyongbo/zh_CN/index.htm'}
 
 student:
 - {name: '李超群', title: '三年级博士生', email: 'chaoqunli@mail.sdu.edu.cn', url: 'https://supergroupli.github.io/chaoqunli/'}
 - {name: '刘晋尧', title: '二年级博士生', email: 'jacelau@mail.sdu.edu.cn', url: 'https://seclee.com'}
-- {name: 'More', title: '二年级博士生', email: 'xxx@mail.sdu.edu.cn', url: 'https://xxxx'}
+- {name: '李少伟', title: '二年级博士生', email: 'lishaowei6208@mail.sdu.edu.cn', url: ''}
+- {name: '于红靖', title: '一年级博士生', email: 'yuhj@mail.sdu.edu.cn', url: ''}
+- {name: '贾丁毅', title: '一年级博士生', email: '202521596@mail.sdu.edu.cn', url: ''}
+- {name: '张智森', title: '二年级硕士生', email: '', url: ''}
+- {name: '马浩原', title: '二年级硕士生', email: '', url: ''}
+- {name: '孙中远', title: '二年级硕士生', email: '', url: ''}
+- {name: '王旭', title: '二年级硕士生', email: '', url: ''}
+- {name: '陈鹏宇', title: '二年级硕士生', email: '', url: ''}
+- {name: '刘念友', title: '二年级硕士生', email: '', url: ''}
+- {name: '白帅', title: '一年级硕士生', email: '', url: ''}
+- {name: '王清恒', title: '一年级硕士生', email: '', url: ''}
+- {name: '杨树', title: '一年级硕士生', email: '', url: ''}
+- {name: '盛柄涵', title: '一年级硕士生', email: '', url: ''}
 
 social:
 - {icon: 'github', link: 'https://github.com/IIC-SIG-MLsys'}
