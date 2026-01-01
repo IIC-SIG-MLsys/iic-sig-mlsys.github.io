@@ -1,15 +1,144 @@
+<style>
+  /* --- 样式定义 --- */
+
+  /* 1. 年份区块容器 (灰色背景 - 保留) */
+  .pub-year-section {
+      background-color: #f8f9fa; /* 极浅灰 */
+      border-radius: 12px;       
+      padding: 25px;             
+      margin-bottom: 40px;       
+      border: 1px solid #e9ecef; 
+  }
+
+  /* 2. 年份大标题 */
+  .pub-year-header {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #0d6efd; 
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      border-left: 5px solid #cbd5e1; /* 灰色粗竖线 */
+      line-height: 1;
+  }
+
+  /* 3. 论文卡片 (左侧蓝条 + 白色背景) */
+  .pub-card {
+      background: #fff;       
+      border: 1px solid #e1e4e8;
+      border-left: 4px solid #0d6efd; /* 核心特征：科技感蓝条 */
+      border-radius: 6px;
+      padding: 20px; /* 稍微增加一点内边距，因为没有按钮了，需要撑开空间 */
+      margin-bottom: 16px;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  }
+
+  /* 悬停效果：浮起 + 阴影 + 蓝条变深 */
+  .pub-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      border-left-color: #0a58ca;
+  }
+
+  /* 4. 论文标题 (点击主力) */
+  .pub-name {
+      font-size: 1rem;
+      color: #2c3e50; /* 深灰 */
+      line-height: 1.6;
+      font-weight: 500;
+      display: block;
+      text-decoration: none;
+      transition: color 0.2s;
+  }
+  
+  /* 悬停时标题变蓝，提示可点击 */
+  .pub-name:hover {
+      color: #0d6efd; 
+  }
+  
+  /* 如果没有链接，鼠标指针改回默认 */
+  .pub-name.no-link {
+      cursor: default;
+  }
+  .pub-name.no-link:hover {
+      color: #2c3e50; /* 没有链接时悬停不变色 */
+  }
+
+</style>
+
 <div class="row g-5 mb-5">
   <div>
     {% if page.title == "Home" %}
-    <h3 class="fw-bold border-bottom pb-3 mb-5">最新进展</h3>
+      <h3 class="fw-bold border-bottom pb-3 mb-4">最新进展 (Featured)</h3>
+      
       {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+        <div class="pub-card">
+          {% if item.url != '' %}
+             <a href="{{ item.url }}" target="_blank" class="pub-name">
+               {{ item.name }}
+             </a>
+          {% else %}
+             <span class="pub-name no-link">{{ item.name }}</span>
+          {% endif %}
+        </div>
       {% endfor %}
+
     {% else %}
-    <h3 class="fw-bold border-bottom pb-3 mb-5">论文发表</h3>
-      {% for item in site.data.publications.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
+      <h3 class="fw-bold border-bottom pb-3 mb-4">论文发表 (Publications)</h3>
+
+      <div class="pub-year-section">
+          <div class="pub-year-header">2026</div>
+          {% for item in site.data.publications.index limit:2 %}
+            <div class="pub-card">
+              {% if item.url != '' %}
+                 <a href="{{ item.url }}" target="_blank" class="pub-name">{{ item.name }}</a>
+              {% else %}
+                 <span class="pub-name no-link">{{ item.name }}</span>
+              {% endif %}
+            </div>
+          {% endfor %}
+      </div>
+
+      <div class="pub-year-section">
+          <div class="pub-year-header">2025</div>
+          {% for item in site.data.publications.index limit:10 offset:2 %}
+            <div class="pub-card">
+              {% if item.url != '' %}
+                 <a href="{{ item.url }}" target="_blank" class="pub-name">{{ item.name }}</a>
+              {% else %}
+                 <span class="pub-name no-link">{{ item.name }}</span>
+              {% endif %}
+            </div>
+          {% endfor %}
+      </div>
+
+      <div class="pub-year-section">
+          <div class="pub-year-header">2024</div>
+          {% for item in site.data.publications.index limit:7 offset:12 %}
+            <div class="pub-card">
+              {% if item.url != '' %}
+                 <a href="{{ item.url }}" target="_blank" class="pub-name">{{ item.name }}</a>
+              {% else %}
+                 <span class="pub-name no-link">{{ item.name }}</span>
+              {% endif %}
+            </div>
+          {% endfor %}
+      </div>
+
+      <div class="pub-year-section">
+          <div class="pub-year-header">2023</div>
+          {% for item in site.data.publications.index limit:5 offset:19 %}
+            <div class="pub-card">
+              {% if item.url != '' %}
+                 <a href="{{ item.url }}" target="_blank" class="pub-name">{{ item.name }}</a>
+              {% else %}
+                 <span class="pub-name no-link">{{ item.name }}</span>
+              {% endif %}
+            </div>
+          {% endfor %}
+      </div>
+
     {% endif %}
   </div>
 </div>
