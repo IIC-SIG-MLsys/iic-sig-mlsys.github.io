@@ -10,7 +10,7 @@
     - "Si Wu"
     - "Feng Li"
     - "Xiuzhen Cheng"
-    - "Pengfei Hu"
+    - "Pengfei Hu*"
   conference: "IEEE ICDCS"
   year: 2026
   ccf: "B"
@@ -62,13 +62,13 @@
   title: "BeeQoS: A Cloud-Native QoS System for Adaptive and Scalable Multi-Priority Bandwidth Guarantees"
   authors:
     - "Jinyao Liu"
-    - "Si Wu*"
+    - "Si Wu"
     - "Haoyuan Ma"
     - "Chaoqun Li"
     - "Hongjing Yu"
     - "Dingyi Jia"
     - "Feng Li"
-    - "Pengfei Hu"
+    - "Pengfei Hu*"
   conference: "ACM WWW"
   year: 2026
   ccf: "A"
@@ -81,14 +81,14 @@
   title: "CEAT: Context-Emotion Adversarial Training Framework for Robust Emotion-Driven Fraud Detection"
   authors:
     - "Chaoqun Li"
-    - "Si Wu*"
+    - "Si Wu"
     - "Yijun Lu"
     - "Yuyin Ma"
     - "JinYao Liu"
     - "Dingyi Jia"
     - "Mingda Han"
     - "Feng Li"
-    - "Pengfei Hu"
+    - "Pengfei Hu*"
   conference: "ACM WWW"
   year: 2026
   ccf: "A"
@@ -141,7 +141,7 @@
     - "Pengfei Hu"
     - "Xiuzhen Cheng"
     - "Chunxiao Wang"
-    - "Feng Li"
+    - "Feng Li*"
   conference: "IEEE/ACM IWQoS"
   year: 2025
   ccf: "B"
@@ -160,7 +160,7 @@
     - "Mingda Han"
     - "Si Wu"
     - "Feng Li"
-    - "Pengfei Hu"
+    - "Pengfei Hu*"
   conference: "IEEE ICDCS"
   year: 2025
   ccf: "B"

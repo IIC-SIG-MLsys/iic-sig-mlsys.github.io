@@ -177,5 +177,4 @@ student:
   email: ''
   url: ''
 
-social:
-- {icon: 'github', link: 'https://github.com/IIC-SIG-MLsys'}
+social: []
