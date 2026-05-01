@@ -1,4 +1,4 @@
 ---
 layout: publications
-title: "Publications"
+title: "学术成果"
 ---

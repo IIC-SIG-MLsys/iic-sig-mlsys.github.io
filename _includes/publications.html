@@ -1,14 +1,65 @@
 <div class="row g-5 mb-5">
   <div>
     {% if page.title == "Home" %}
-    <h3 class="fw-bold border-bottom pb-3 mb-5">最新进展</h3>
-      {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+    {% assign max_visible = 5 %}
+    {% assign max_expand  = 20 %}
+    <h3 class="section-title">最新发布</h3>
+
+      {% for post in site.posts %}
+      <div class="news-item{% if forloop.index > max_visible %} news-item-hidden d-none{% endif %}">
+        <div class="news-item-top">
+          {% if post.categories contains "news" %}
+          <span class="pub-tag">新闻</span>
+          {% else %}
+          <span class="pub-tag">文章</span>
+          {% endif %}
+          <a href="{{ post.url }}" class="news-title">{{ post.title }}</a>
+        </div>
+        <div class="news-date">{{ post.date | date: "%Y年%-m月%-d日" }}</div>
+      </div>
       {% endfor %}
+
+      {% assign total = site.posts | size %}
+      {% if total > max_visible %}
+      <div class="text-center mt-3">
+        <button id="news-more-btn" class="news-more-btn">
+          更多 <i class="fas fa-chevron-down ms-1"></i>
+        </button>
+        <button id="news-less-btn" class="news-more-btn d-none">
+          收起 <i class="fas fa-chevron-up ms-1"></i>
+        </button>
+      </div>
+      {% endif %}
+      {% if total > max_expand %}
+      <div id="news-all-link" class="text-center mt-2 d-none">
+        <a href="{{ site.github.url }}/news" class="news-all-link">查看全部 &rarr;</a>
+      </div>
+      {% endif %}
+
     {% else %}
-    <h3 class="fw-bold border-bottom pb-3 mb-5">论文发表</h3>
-      {% for item in site.data.publications.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+    <h3 class="section-title">学术成果</h3>
+      {% assign current_year = "" %}
+      {% for pub in site.data.publications %}
+        {% if pub.year != current_year %}
+        {% assign current_year = pub.year %}
+        <h4 class="year-heading">{{ current_year }}</h4>
+        {% endif %}
+        <div class="publication-item">
+          <div class="pub-title">{{ pub.title }}</div>
+          <div class="pub-authors">{{ pub.authors | join: ", " }}</div>
+          <div class="pub-venue">
+            <em>{{ pub.conference }} {{ pub.year }}</em>
+            {% if pub.ccf %}<span class="ccf-badge">CCF {{ pub.ccf }}</span>{% endif %}
+            {% if pub.awards %}
+              {% for award in pub.awards %}
+                <span class="award-badge">{{ award }}</span>
+              {% endfor %}
+            {% endif %}
+            {% if pub.url != "" %}<a href="{{ pub.url }}" class="pub-link" target="_blank">论文链接</a>{% endif %}
+            {% if pub.pdf != "" %}<a href="{{ pub.pdf }}" class="pub-link" target="_blank">PDF</a>{% endif %}
+            {% if pub.code != "" %}<a href="{{ pub.code }}" class="pub-link" target="_blank">代码</a>{% endif %}
+          </div>
+        </div>
       {% endfor %}
     {% endif %}
   </div>

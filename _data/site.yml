@@ -1,0 +1,28 @@
+lab:
+  name: "人工智能系统实验室"
+  name_en: "System of Artificial Intelligence Laboratory (SAIL)"
+  institution: "山东大学"
+  campus: "青岛校区"
+  building: "第周苑 N3"
+  room: "329"
+  address: "计算机科学与技术学院，第周苑N3楼, 山东大学青岛校区"
+  city: "266000"
+  province: "山东省"
+  country: "中国"
+  zip: "266200"
+
+group_meeting:
+  time: "每周三 14:30-16:00"
+  location: "山东大学青岛校区 第周苑 N3-332"
+  online: "腾讯会议：465-1393-8737"
+  content: "论文分享、学习交流"
+
+homepage:
+  hero_image: "https://www.cs.sdu.edu.cn/images/110.jpg"
+  qrcode:
+    public_account: "/assets/img/qrcode.jpg"
+    group_meeting: "/assets/img/doc.png"
+
+news:
+  enabled: true
+  max_display: 5

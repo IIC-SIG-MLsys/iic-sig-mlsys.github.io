@@ -1,17 +1,19 @@
-<footer class="pt-5 my-5 text-muted border-top">
+<footer class="site-footer">
   <div class="row">
-    <div class="col-md-6 text-center mx-auto social-media-icons">
-      {% for item in site.data.settings.social %}
-        <a href="{{ item.link }}" class="ms-3 fs-5"><i class="fab fa-{{ item.icon }}"></i></a>
-      {% endfor %}
+    <div class="col-md-6">
+      <p class="mb-1 fw-semibold" style="color: #0f172a;">{{ site.data.site.lab.name }}</p>
+      <p class="mb-0">{{ site.data.site.lab.name_en }}</p>
+      <p class="mb-0">{{ site.data.site.lab.institution }} · {{ site.data.site.lab.campus }}</p>
     </div>
-  </div>
-
-  <div class="row mt-4">
-    <div class="col-md-6 text-center mx-auto">
-      <p class="mb-0">地址: 计算机科学与技术学院，第周苑N3楼, 山东大学青岛校区, 266000, 中国山东省.</p>
-      <!-- 访客地图 -->
-      <!-- <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=200&t=n&d=FOw3TN0L1yDQCTYIbE1dNB4DFgsA59VFLVuSut6y5fY'></script> -->
+    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+      <div class="mb-2">
+        {% for item in site.data.settings.social %}
+          <a href="{{ item.link }}" target="_blank" rel="noopener" class="social-icon me-2 text-decoration-none">
+            <i class="fab fa-{{ item.icon }}"></i>
+          </a>
+        {% endfor %}
+      </div>
+      <p class="mb-0">&copy; {{ site.time | date: "%Y" }} SAIL</p>
     </div>
   </div>
 </footer>

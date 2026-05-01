@@ -1,8 +1,65 @@
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">科研项目</h3>
-      {% for item in site.data.projects.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
+    <h3 class="section-title">科研项目</h3>
+
+    {% for project in site.data.projects %}
+    <div class="project-card mb-4">
+      <div class="d-flex flex-wrap align-items-start justify-content-between mb-1">
+        <div>
+          <h4 class="fw-bold mb-1">{{ project.name }}</h4>
+          {% if project.subtitle %}
+          <p class="text-muted mb-0" style="font-size:0.85rem;">{{ project.subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="project-meta">
+        {% if project.start_date %}
+        <span class="project-period">{{ project.start_date }}{% if project.end_date and project.end_date != "" %} ~ {{ project.end_date }}{% else %} ~ 至今{% endif %}</span>
+        {% endif %}
+        {% if project.status == "active" %}
+        <span class="project-status">进行中</span>
+        {% endif %}
+      </div>
+
+      {% if project.image %}
+      <div class="mb-3">
+        <img src="{{ project.image }}" alt="{{ project.name }}" class="project-image">
+      </div>
+      {% endif %}
+
+      <p class="mb-3" style="font-size:0.9rem;line-height:1.8;">{{ project.description }}</p>
+
+      {% if project.highlights %}
+      <div class="mb-3">
+        <strong class="d-block mb-2" style="font-size:0.82rem;color:#64748b;"><i class="fas fa-sparkles me-1" style="font-size:0.78rem;"></i>亮点</strong>
+        <ul class="mb-0 ps-3" style="font-size:0.87rem;line-height:1.9;">
+          {% for item in project.highlights %}
+          <li class="mb-0">{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if project.tech_stack %}
+      <div class="mb-3">
+        <strong class="d-block mb-2" style="font-size:0.82rem;color:#64748b;"><i class="fas fa-wrench me-1" style="font-size:0.78rem;"></i>技术栈</strong>
+        <div class="d-flex flex-wrap gap-2">
+          {% for tech in project.tech_stack %}
+          <span class="tech-badge">{{ tech }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if project.github %}
+      <div class="d-flex align-items-center gap-3 pt-3 border-top">
+        <a href="{{ project.github }}" target="_blank" rel="noopener" class="text-decoration-none" style="font-size:0.85rem;">
+          <i class="fab fa-github me-1"></i>{{ project.github | remove: "https://github.com/" }}
+        </a>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
   </div>
 </div>

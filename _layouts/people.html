@@ -4,29 +4,32 @@ layout: default
 
 {{ content }}
 
-<h3 class="fw-bold border-bottom pb-3 mt-5">导师团队</h3>
+<h3 class="section-title">导师团队</h3>
 
 <div class="row g-4">
   {% for person in site.data.settings.teacher %}
   <div class="col-12 col-md-6">
-    <div class="rounded-4 p-3 h-100">
-      <div class="row g-3 align-items-center">
-        <div class="col-3">
-          <img
-            src="{{ person.image }}"
-            alt="{{ person.name }}"
-            style="width:100%; max-width:130px; object-fit:cover; display:block;"
-          >
-        </div>
-
-        <div class="col-9">
-          <h5 class="mb-2">{{ person.name }} {{ person.title }}</h5>
-          <p class="mb-1">
-            Email: <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+    <div class="card-elegant-bordered p-4 h-100">
+      <div class="d-flex align-items-start gap-3">
+        <img src="{{ person.image }}" alt="{{ person.name }}" class="teacher-avatar flex-shrink-0">
+        <div class="min-w-0">
+          <h5 class="fw-bold mb-1">{{ person.name }}</h5>
+          <p class="text-muted mb-2" style="font-size:0.88rem;">{{ person.title }} · {{ person.department }}</p>
+          {% unless person.research == empty %}
+          <p class="mb-1" style="font-size:0.86rem;">
+            <span class="info-icon"><i class="fas fa-flask"></i></span>{{ person.research | join: ", " }}
           </p>
-          <p class="mb-0">
-            <a href="{{ person.url }}" target="_blank" rel="noopener">个人主页</a>
+          {% endunless %}
+          {% if person.email and person.email != "" %}
+          <p class="mb-1" style="font-size:0.86rem;">
+            <span class="info-icon"><i class="fas fa-envelope"></i></span><a href="mailto:{{ person.email }}">{{ person.email }}</a>
           </p>
+          {% endif %}
+          {% if person.url and person.url != "" and person.url != "/" %}
+          <p class="mb-0" style="font-size:0.86rem;">
+            <span class="info-icon"><i class="fas fa-globe"></i></span><a href="{{ person.url }}" target="_blank" rel="noopener">{{ person.url | remove: "https://" | remove: "http://" | remove: "www." | split: "/" | first }}</a>
+          </p>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -34,30 +37,29 @@ layout: default
   {% endfor %}
 </div>
 
-<h3 class="fw-bold border-bottom pb-3 mt-5">在读学生</h3>
+<h3 class="section-title mt-5">在读学生</h3>
 
 <div class="row g-4">
   {% for person in site.data.settings.student %}
   <div class="col-12 col-md-6 col-lg-4">
-    <div class="rounded-4 p-3 h-100">
-      <div class="row g-3 align-items-start">
-        <h5 class="mb-2">
-          {{ person.name }}
-          {% if person.title %}<small class="text-muted">{{ person.title }}</small>{% endif %}
-        </h5>
-
-        {% unless person.email == blank %}
-        <p class="mb-1">
-          Email: <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-        </p>
-        {% endunless %}
-
-        {% unless person.url == blank %}
-        <p class="mb-0">
-          <a href="{{ person.url }}" target="_blank" rel="noopener">个人主页</a>
-        </p>
-        {% endunless %}
-      </div>
+    <div class="card-elegant-bordered p-3 h-100">
+      <h5 class="fw-bold mb-1">{{ person.name }}</h5>
+      <p class="text-muted mb-2" style="font-size:0.85rem;">{{ person.title }}</p>
+      {% unless person.research == empty %}
+      <p class="mb-1" style="font-size:0.85rem;">
+        <span class="info-icon"><i class="fas fa-flask"></i></span>{{ person.research | join: ", " }}
+      </p>
+      {% endunless %}
+      {% if person.email and person.email != "" %}
+      <p class="mb-1" style="font-size:0.85rem;">
+        <span class="info-icon"><i class="fas fa-envelope"></i></span><a href="mailto:{{ person.email }}">{{ person.email }}</a>
+      </p>
+      {% endif %}
+      {% if person.url and person.url != "" and person.url != "/" %}
+      <p class="mb-0" style="font-size:0.85rem;">
+        <span class="info-icon"><i class="fas fa-globe"></i></span><a href="{{ person.url }}" target="_blank" rel="noopener">{{ person.url | remove: "https://" | remove: "http://" | remove: "www." | split: "/" | first }}</a>
+      </p>
+      {% endif %}
     </div>
   </div>
   {% endfor %}

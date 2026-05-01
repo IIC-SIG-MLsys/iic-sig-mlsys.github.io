@@ -1,0 +1,30 @@
+<!-- 二维码与组会信息 -->
+<div class="row g-5 mb-5">
+  <div class="col-md-12">
+    <h3 class="fw-bold border-bottom pb-3 mb-4">交流平台</h3>
+
+    <div class="row g-4">
+      <!-- 公众号 -->
+      <div class="col-md-4 d-flex flex-column justify-content-center align-items-center text-center">
+        <img src="{{ site.data.site.homepage.qrcode.public_account }}" alt="公众号二维码" class="img-fluid" style="max-width: 200px;">
+        <p class="fw-bold mt-2 mb-0">公众号</p>
+      </div>
+
+      <!-- 组会纪要 -->
+      <div class="col-md-4 d-flex flex-column justify-content-center align-items-center text-center">
+        <img src="{{ site.data.site.homepage.qrcode.group_meeting }}" alt="组会二维码" class="img-fluid" style="max-width: 200px;">
+        <p class="fw-bold mt-2 mb-0">每周分享</p>
+      </div>
+
+      <!-- 组会安排 -->
+      <div class="col-md-4 d-flex flex-column justify-content-center">
+        <ul class="list-unstyled mb-0" style="max-width: 300px; margin: 0 auto;">
+          <li><strong>时间：</strong>{{ site.data.site.group_meeting.time }}</li>
+          <li><strong>线下地点：</strong>{{ site.data.site.group_meeting.location }}</li>
+          <li><strong>线上会议：</strong>{{ site.data.site.group_meeting.online }}</li>
+          <li><strong>内容：</strong>{{ site.data.site.group_meeting.content }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

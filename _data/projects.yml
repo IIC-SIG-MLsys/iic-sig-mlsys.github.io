@@ -1,5 +1,24 @@
-index:
-- {name: '异构GPU并行加速技术', url: 'https://github.com/IIC-SIG-MLsys/HMC'}
-- {name: 'more.', url: ''}
-- {name: 'more.', url: ''}
-- {name: 'more.', url: ''}
+- name: "异构GPU并行加速技术"
+  id: hmc
+  subtitle: "HMC (Heterogeneous Memory Communication)"
+  description: "面向异构系统（CPU/GPU）的统一通信框架，提供设备无关的内存抽象和传输接口。支持 CPU、NVIDIA GPU (CUDA)、AMD GPU (ROCm)、寒武纪 MLU、摩尔线程 GPU 等多种设备。"
+  image : "https://i.ibb.co/KxgX01zH/conn.png"
+  highlights:
+    - "统一内存抽象，设备无关的分配/释放/拷贝接口"
+    - "支持 UCX 通用传输和 RDMA 高性能异构 GPU-Direct 传输"
+    - "基于 (offset, size) 的注册 IO 缓冲模型"
+    - "提供 Python 和 C++ 双语言 API，支持 NumPy/PyTorch 集成"
+  tech_stack:
+    - "C++17"
+    - "Python"
+    - "CUDA"
+    - "ROCm"
+    - "UCX"
+    - "RDMA"
+  github: "https://github.com/IIC-SIG-MLsys/HMC"
+  start_date: "2024-09"
+  end_date: ""
+  status: "active"
+
+- name: "TODO more"
+  

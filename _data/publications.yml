@@ -1,13 +1,187 @@
-featured:
-- {name: 'Hongjing Yu, Si Wu*, JinYao Liu, Feng Li. ROE: Repair-Oriented Encoding for Erasure Codes with Localities. IEEE INFOCOM 2026. (CCF A)', url: ''}
-- {name: 'Shaowei Li, Zhiwen Gan, Jinyao Liu, Chengxi Gao, Fuliang Li, Si Wu, Pengfei Hu, and Feng Li. ConfAgent: Towards Intelligent Network Configuration via LLM Agent. IEEE/ACM IWQoS 2025. (CCF B)', url: 'https://ieeexplore.ieee.org/abstract/document/11143333'}
-- {name: 'Chaoqun Li, Rongsheng Fan, Hesong Wang, Mingda Han, Si Wu, Feng Li, and Pengfei Hu. TSAJS: Efficient Multi-Server Joint Task Scheduling Scheme for Mobile Edge Computing. IEEE ICDCS 2025. (CCF B, Best Presentation Award)', url: 'https://ieeexplore.ieee.org/document/11183745'}
-- {name: 'Shaowei Li, Zhiwen Gan, Mengbai Xiao, Pengfei Hu, Xiuzhen Cheng, Chunxiao Wang, and Feng Li. MOTA: Mixture Of Traffic Agents for robust network traffic classification. IEEE/ACM IWQoS 2025. (CCF B Best Paper Runner-Up)', url: 'https://ieeexplore.ieee.org/document/11143417'}
+- id: fedrff-2026
+  title: "FedRFF: Enhanced Federated Random Fourier Feature Framework for IoT Anomaly Detection"
+  authors:
+    - "Chaoqun Li"
+    - "Tao Luo"
+    - "Keyuan Qiu"
+    - "Jinyao Liu"
+    - "Xianglong Zhang"
+    - "Huanle Zhang"
+    - "Si Wu"
+    - "Feng Li"
+    - "Xiuzhen Cheng"
+    - "Pengfei Hu"
+  conference: "IEEE ICDCS"
+  year: 2026
+  ccf: "B"
+  featured: true
+  url: ""
+  pdf: ""
+  code: ""
 
+- id: uhm-2026
+  title: "UHM: Unified Transferring and Pooling over Heterogeneous GPU Memories"
+  authors:
+    - "Jinyao Liu"
+    - "Si Wu*"
+    - "Haoyuan Ma"
+    - "Chaoqun Li"
+    - "Shaowei Li"
+    - "Hongjing Yu"
+    - "Fengxi Zhou"
+    - "Feng Li"
+    - "Xiuzhen Cheng"
+    - "Pengfei Hu"
+  conference: "IEEE TC"
+  year: 2026
+  ccf: "A"
+  featured: true
+  url: ""
+  pdf: ""
+  code: ""
 
-index:
-- {name: 'Hongjing Yu, Si Wu*, JinYao Liu, Feng Li. ROE: Repair-Oriented Encoding for Erasure Codes with Localities. IEEE INFOCOM 2026. (CCF A)', url: ''}
-- {name: 'Shaowei Li, Zhiwen Gan, Jinyao Liu, Chengxi Gao, Fuliang Li, Si Wu, Pengfei Hu, and Feng Li. ConfAgent: Towards Intelligent Network Configuration via LLM Agent. IEEE/ACM IWQoS 2025. (CCF B)', url: 'https://ieeexplore.ieee.org/abstract/document/11143333'}
-- {name: 'Chaoqun Li, Rongsheng Fan, Hesong Wang, Mingda Han, Si Wu, Feng Li, and Pengfei Hu. TSAJS: Efficient Multi-Server Joint Task Scheduling Scheme for Mobile Edge Computing. IEEE ICDCS 2025. (CCF B, Best Presentation Award)', url: 'https://ieeexplore.ieee.org/document/11183745'}
-- {name: 'Si Wu, Guantian Lin, Patrick P. C. Lee, and Yinlong Xu. Leveled Product Codes for Optimal Block Repairs in Geo-distributed Storage Systems. Proceedings of IEEE International Conference on Computer Communications (INFOCOM 2025), May 19-22, 2025. (CCF A)', url: 'https://ieeexplore.ieee.org/abstract/document/11044776'}
-- {name: 'Shaowei Li, Zhiwen Gan, Mengbai Xiao, Pengfei Hu, Xiuzhen Cheng, Chunxiao Wang, and Feng Li. MOTA: Mixture Of Traffic Agents for robust network traffic classification. IEEE/ACM IWQoS 2025. (CCF B Best Paper Runner-Up)', url: 'https://ieeexplore.ieee.org/document/11143417'}
+- id: cloudclaw-2026
+  title: "CloudClaw: A Recoverable Execution Substrate for Multi-Tenant LLM Agents"
+  authors:
+    - "Jinyao Liu"
+    - "Si Wu*"
+    - "Mingda Han"
+    - "Tianxing Li"
+    - "Shuai Bai"
+    - "Chaoqun Li"
+    - "Shaowei Li"
+    - "Pengfei Hu"
+  conference: "Autosys"
+  year: 2026
+  featured: true
+  url: ""
+  pdf: ""
+  code: ""
+  
+- id: beeqos-2026
+  title: "BeeQoS: A Cloud-Native QoS System for Adaptive and Scalable Multi-Priority Bandwidth Guarantees"
+  authors:
+    - "Jinyao Liu"
+    - "Si Wu*"
+    - "Haoyuan Ma"
+    - "Chaoqun Li"
+    - "Hongjing Yu"
+    - "Dingyi Jia"
+    - "Feng Li"
+    - "Pengfei Hu"
+  conference: "ACM WWW"
+  year: 2026
+  ccf: "A"
+  featured: true
+  url: "https://dl.acm.org/doi/10.1145/3774904.3792487"
+  pdf: ""
+  code: ""
+  
+- id: ceat-2026
+  title: "CEAT: Context-Emotion Adversarial Training Framework for Robust Emotion-Driven Fraud Detection"
+  authors:
+    - "Chaoqun Li"
+    - "Si Wu*"
+    - "Yijun Lu"
+    - "Yuyin Ma"
+    - "JinYao Liu"
+    - "Dingyi Jia"
+    - "Mingda Han"
+    - "Feng Li"
+    - "Pengfei Hu"
+  conference: "ACM WWW"
+  year: 2026
+  ccf: "A"
+  featured: true
+  url: "https://dl.acm.org/doi/abs/10.1145/3774904.3792981"
+  pdf: ""
+  code: ""
+
+- id: roe-2026
+  title: "ROE: Repair-Oriented Encoding for Erasure Codes with Localities"
+  authors:
+    - "Hongjing Yu"
+    - "Si Wu*"
+    - "JinYao Liu"
+    - "Feng Li"
+  conference: "IEEE INFOCOM"
+  year: 2026
+  ccf: "A"
+  featured: true
+  url: ""
+  pdf: ""
+  code: ""
+
+- id: confagent-2025
+  title: "ConfAgent: Towards Intelligent Network Configuration via LLM Agent"
+  authors:
+    - "Shaowei Li"
+    - "Zhiwen Gan"
+    - "Jinyao Liu"
+    - "Chengxi Gao"
+    - "Fuliang Li"
+    - "Si Wu"
+    - "Pengfei Hu"
+    - "Feng Li"
+  conference: "IEEE/ACM IWQoS"
+  year: 2025
+  ccf: "B"
+  featured: true
+  awards: []
+  url: "https://ieeexplore.ieee.org/abstract/document/11143333"
+  pdf: ""
+  code: ""
+
+- id: mota-2025
+  title: "MOTA: Mixture Of Traffic Agents for robust network traffic classification"
+  authors:
+    - "Shaowei Li"
+    - "Zhiwen Gan"
+    - "Mengbai Xiao"
+    - "Pengfei Hu"
+    - "Xiuzhen Cheng"
+    - "Chunxiao Wang"
+    - "Feng Li"
+  conference: "IEEE/ACM IWQoS"
+  year: 2025
+  ccf: "B"
+  awards: ["Best Paper Runner-Up"]
+  featured: true
+  url: "https://ieeexplore.ieee.org/document/11143417"
+  pdf: ""
+  code: ""
+
+- id: tsajs-2025
+  title: "TSAJS: Efficient Multi-Server Joint Task Scheduling Scheme for Mobile Edge Computing"
+  authors:
+    - "Chaoqun Li"
+    - "Rongsheng Fan"
+    - "Hesong Wang"
+    - "Mingda Han"
+    - "Si Wu"
+    - "Feng Li"
+    - "Pengfei Hu"
+  conference: "IEEE ICDCS"
+  year: 2025
+  ccf: "B"
+  awards: ["Best Presentation Award"]
+  featured: true
+  url: "https://ieeexplore.ieee.org/document/11183745"
+  pdf: ""
+  code: ""
+
+- id: leveled-2025
+  title: "Leveled Product Codes for Optimal Block Repairs in Geo-distributed Storage Systems"
+  authors:
+    - "Si Wu"
+    - "Guantian Lin"
+    - "Patrick P. C. Lee"
+    - "Yinlong Xu"
+  conference: "IEEE INFOCOM"
+  year: 2025
+  ccf: "A"
+  featured: false
+  url: "https://ieeexplore.ieee.org/abstract/document/11044776"
+  pdf: ""
+  code: ""
+

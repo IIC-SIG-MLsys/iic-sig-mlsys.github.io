@@ -2,61 +2,49 @@
 layout: default
 ---
 
-<div class="row g-5 mb-5">
-  <div class="col-md-6">
-    <h3 class="fw-bold mb-2">实验室简介</h3>
-    {{ content }}
+<div class="hero-section">
+  <div class="hero-image">
+    <img src="{{ site.data.site.homepage.hero_image }}" alt="实验室">
   </div>
-  <!-- <div class="col-md-6">
-    <img src="https://www.cs.sdu.edu.cn/images/110.jpg" alt="Home" width="100%">
-  </div> -->
-  <div class="col-md-6">
-    <div class="ratio ratio-16x9">
-      <img src="https://www.cs.sdu.edu.cn/images/110.jpg"
-          class="w-100 h-100"
-          style="object-fit: cover; object-position: center;"
-          alt="Home">
+  <div class="hero-text">
+    <p class="hero-label">SAIL · 人工智能系统实验室</p>
+    <h1 class="hero-title brand">实验室简介</h1>
+    <div class="hero-desc">
+      {{ content }}
     </div>
   </div>
 </div>
 
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">新闻</h3>
-    {% for post in site.posts %}
-      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
-    {% endfor %}
-  </div>
-</div>
-
-
 {% include publications.html %}
 
-<!-- 新增：二维码与组会信息 -->
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-4">交流平台</h3>
+<div class="mb-5">
+  <h3 class="section-title">交流平台</h3>
 
-    <div class="row g-4">
-      <!-- 公众号 -->
-      <div class="col-md-4 d-flex flex-column justify-content-center align-items-center text-center">
-        <img src="/assets/img/qrcode.jpg" alt="公众号二维码" class="img-fluid" style="max-width: 200px;">
-        <p class="fw-bold mt-2 mb-0">课题组公众号</p>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="comm-card text-center">
+        <img src="{{ site.data.site.homepage.qrcode.public_account }}" alt="公众号二维码" class="img-fluid">
+        <p class="fw-bold mt-3 mb-1" style="font-size:0.92rem;">公众号</p>
+        <p class="text-muted mb-0" style="font-size:0.75rem;">关注最新动态</p>
       </div>
+    </div>
 
-      <!-- 组会纪要 -->
-      <div class="col-md-4 d-flex flex-column justify-content-center align-items-center text-center">
-        <img src="/assets/img/doc.png" alt="组会二维码" class="img-fluid" style="max-width: 200px;">
-        <p class="fw-bold mt-2 mb-0">每周分享</p>
+    <div class="col-md-4">
+      <div class="comm-card text-center">
+        <img src="{{ site.data.site.homepage.qrcode.group_meeting }}" alt="组会二维码" class="img-fluid">
+        <p class="fw-bold mt-3 mb-1" style="font-size:0.92rem;">每周分享</p>
+        <p class="text-muted mb-0" style="font-size:0.75rem;"></p>
       </div>
+    </div>
 
-      <!-- 组会安排 -->
-      <div class="col-md-4 d-flex flex-column justify-content-center">
-        <ul class="list-unstyled mb-0 text-start" style="max-width: 300px; margin: 0 auto;">
-          <li><strong>时间：</strong>每周一 10:00-11:00</li>
-          <li><strong>线下地点：</strong>山东大学青岛校区 第周苑 N3-329</li>
-          <li><strong>线上会议：</strong>#腾讯会议：974-3529-9619</li>
-          <li><strong>内容：</strong>论文分享、学术交流</li>
+    <div class="col-md-4">
+      <div class="comm-card h-100 d-flex flex-column justify-content-center">
+        <p class="fw-bold mb-3" style="font-size:0.92rem;">周会</p>
+        <ul class="list-unstyled mb-0" style="font-size:0.85rem;line-height:2;">
+          <li><span class="text-muted">时间</span>&ensp;{{ site.data.site.group_meeting.time }}</li>
+          <li><span class="text-muted">地点</span>&ensp;{{ site.data.site.group_meeting.location }}</li>
+          <li><span class="text-muted">线上</span>&ensp;{{ site.data.site.group_meeting.online }}</li>
+          <li><span class="text-muted">内容</span>&ensp;{{ site.data.site.group_meeting.content }}</li>
         </ul>
       </div>
     </div>

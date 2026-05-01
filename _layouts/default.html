@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="zh-CN" style="scroll-behavior:smooth">
   {% include head.html %}
   <body>
-    <div class="col-lg-8 mx-auto p-3 py-md-5">
+    <div class="page-container col-lg-8 mx-auto p-3 py-md-4">
       {% include header.html %}
-      {{ content }}
+      <main>
+        {{ content }}
+      </main>
       {% include footer.html %}
     </div>
   </body>
