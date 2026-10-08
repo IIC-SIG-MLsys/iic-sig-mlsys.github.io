@@ -5,6 +5,7 @@ menu:
 
 teacher:
 - name: '胡鹏飞'
+  name_en: 'Pengfei Hu'
   title: '教授'
   department: '计算机科学与技术学院'
   institution: '山东大学'
@@ -19,6 +20,7 @@ teacher:
   bio: ''
 
 - name: '李峰'
+  name_en: 'Feng Li'
   title: '教授'
   department: '计算机科学与技术学院'
   institution: '山东大学'
@@ -32,6 +34,7 @@ teacher:
   bio: ''
 
 - name: '吴思'
+  name_en: 'Si Wu'
   title: '教授'
   department: '计算机科学与技术学院'
   institution: '山东大学'
@@ -46,6 +49,7 @@ teacher:
   bio: ''
 
 - name: '于勇波'
+  name_en: 'Yongbo Yu'
   title: '助理教授'
   department: '人工智能学院'
   institution: '山东大学'
@@ -59,6 +63,7 @@ teacher:
 
 student:
 - name: '李超群'
+  name_en: 'Chaoqun Li'
   title: '2023级博士生'
   level: '博士生'
   research:
@@ -68,6 +73,7 @@ student:
   url: 'https://supergroupli.github.io/chaoqunli/'
 
 - name: '刘晋尧'
+  name_en: 'Jinyao Liu'
   title: '2024级博士生'
   level: '博士生'
   research:
@@ -77,6 +83,7 @@ student:
   url: 'https://seclee.com'
 
 - name: '李少伟'
+  name_en: 'Shaowei Li'
   title: '2024级博士生'
   level: '博士生'
   research:
@@ -86,6 +93,7 @@ student:
   url: ''
 
 - name: '于红靖'
+  name_en: 'Hongjing Yu'
   title: '2025级博士生'
   level: '博士生'
   research: []
@@ -93,6 +101,7 @@ student:
   url: ''
 
 - name: '贾丁毅'
+  name_en: 'Dingyi Jia'
   title: '2025级博士生'
   level: '博士生'
   research: []
@@ -100,6 +109,7 @@ student:
   url: ''
 
 - name: '张智森'
+  name_en: 'Zhisen Zhang'
   title: '2026级博士生'
   level: '博士生'
   research: []
@@ -107,6 +117,7 @@ student:
   url: ''
 
 - name: '罗涛'
+  name_en: 'Tao Luo'
   title: '2026级博士生'
   level: '博士生'
   research: []
@@ -114,6 +125,7 @@ student:
   url: ''
 
 - name: '马浩原'
+  name_en: 'Haoyuan Ma'
   title: '2024级硕士生'
   level: '硕士生'
   research: []
@@ -121,6 +133,7 @@ student:
   url: ''
 
 - name: '孙中远'
+  name_en: 'Zhongyuan Sun'
   title: '2024级硕士生'
   level: '硕士生'
   research: []
@@ -129,6 +142,7 @@ student:
   url: ''
 
 - name: '王旭'
+  name_en: 'Xu Wang'
   title: '2024级硕士生'
   level: '硕士生'
   research: []
@@ -136,6 +150,7 @@ student:
   url: ''
 
 - name: '陈鹏宇'
+  name_en: 'Pengyu Chen'
   title: '2024级硕士生'
   level: '硕士生'
   research: []
@@ -143,6 +158,7 @@ student:
   url: ''
 
 - name: '刘念友'
+  name_en: 'Nianyou Liu'
   title: '2024级硕士生'
   level: '硕士生'
   research: []
@@ -150,6 +166,7 @@ student:
   url: ''
 
 - name: '白帅'
+  name_en: 'Shuai Bai'
   title: '2025级硕士生'
   level: '硕士生'
   research: []
@@ -157,6 +174,7 @@ student:
   url: ''
 
 - name: '王清恒'
+  name_en: 'Qingheng Wang'
   title: '2025级硕士生'
   level: '硕士生'
   research: []
@@ -164,6 +182,7 @@ student:
   url: ''
 
 - name: '杨树'
+  name_en: 'Shu Yang'
   title: '2025级硕士生'
   level: '硕士生'
   research: []
@@ -171,7 +190,40 @@ student:
   url: ''
 
 - name: '盛柄涵'
+  name_en: 'Binghan Sheng'
   title: '2025级硕士生'
+  level: '硕士生'
+  research: []
+  email: ''
+  url: ''
+
+- name: '杨子群'
+  name_en: 'Ziqun Yang'
+  title: '2026级硕士生'
+  level: '硕士生'
+  research: []
+  email: ''
+  url: ''
+
+- name: '冯彬'
+  name_en: 'Bin Feng'
+  title: '2026级硕士生'
+  level: '硕士生'
+  research: []
+  email: ''
+  url: ''
+
+- name: '曹毅'
+  name_en: 'Yi Cao'
+  title: '2026级硕士生'
+  level: '硕士生'
+  research: []
+  email: ''
+  url: ''
+
+- name: '聂方正'
+  name_en: 'Fangzheng Nie'
+  title: '2026级硕士生'
   level: '硕士生'
   research: []
   email: ''
