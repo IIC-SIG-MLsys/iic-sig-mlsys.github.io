@@ -112,6 +112,93 @@
   pdf: ""
   code: ""
 
+- id: productcodes-2026
+  title: "Exploiting Product Codes for Efficient Wide Stripe Generation with Repair Efficiency Guarantee"
+  authors:
+    - "Chaoqun Li"
+    - "Si Wu*"
+    - "Jinyao Liu"
+    - "Feng Li"
+    - "Pengfei Hu"
+  conference: "IEEE TC"
+  year: 2026
+  ccf: "A"
+  featured: false
+  url: "https://doi.org/10.1109/TC.2026.3732670"
+  pdf: ""
+  code: ""
+
+- id: ramp-2026
+  title: "Reinforcement-Guided Adaptive Manifold Perturbation Framework for Robust AI-Generated Text Detection"
+  authors:
+    - "Chaoqun Li"
+    - "Tao Luo"
+    - "Keyuan Qiu"
+    - "Zhejie Xu"
+    - "Jinyao Liu"
+    - "Wenhao Li"
+    - "Si Wu"
+    - "Feng Li"
+    - "Pengfei Hu"
+  conference: "IEEE TDSC"
+  year: 2026
+  ccf: "A"
+  featured: false
+  url: "https://doi.org/10.1109/TDSC.2026.3716942"
+  pdf: ""
+  code: ""
+
+- id: fpw-2026
+  title: "FPW: A Fast-Path Write Protocol for Straggler Mitigation in Erasure-Coded Storage"
+  authors:
+    - "Dingyi Jia"
+    - "Si Wu*"
+    - "Chaoqun Li"
+    - "Tao Luo"
+    - "Yubiao Pan"
+    - "Feng Li"
+    - "Pengfei Hu"
+  conference: "IEEE Cluster"
+  year: 2026
+  ccf: "B"
+  featured: false
+  url: ""
+  pdf: ""
+  code: ""
+
+- id: umerge-2026
+  title: "UMerge: I/O-efficient Stripe Merging in Locally Repairable Codes with Uniform Locality"
+  authors:
+    - "Nianyou Liu"
+    - "Dingyi Jia"
+    - "Si Wu*"
+    - "Feng Li"
+    - "Pengfei Hu"
+  conference: "JSA"
+  year: 2026
+  ccf: "B"
+  featured: false
+  url: "https://doi.org/10.1016/j.sysarc.2026.103991"
+  pdf: ""
+  code: ""
+
+- id: agripilot-2026
+  title: "AgriPilot: Disagreement-Aware Multi-Agent Governance for Robust Greenhouse Control"
+  authors:
+    - "Mingda Han"
+    - "Tongda Wang"
+    - "Yingzhen Xu"
+    - "Yinan Zhao"
+    - "Haozhe Zhang"
+    - "Jinyao Liu"
+    - "Pengfei Hu"
+  conference: "ACM MobiSys Workshops"
+  year: 2026
+  featured: false
+  url: "https://doi.org/10.1145/3812836.3814746"
+  pdf: ""
+  code: ""
+
 - id: confagent-2025
   title: "ConfAgent: Towards Intelligent Network Configuration via LLM Agent"
   authors:
@@ -185,3 +272,51 @@
   pdf: ""
   code: ""
 
+- id: drreasoning-2025
+  title: "DR-Reasoning: Detecting Diabetic Retinopathy via Reasoning VLM"
+  authors:
+    - "Shaowei Li"
+    - "Pengyu Chen"
+    - "Yunsheng Yuan"
+    - "Heng Zhang"
+    - "Yong Zhang"
+    - "Chunhua Hu"
+    - "Xiaolei Wang"
+    - "Xiaowen Liu"
+    - "Huan Yang"
+    - "Feng Li"
+  conference: "IEEE BIBM"
+  year: 2025
+  ccf: "B"
+  featured: false
+  url: "https://doi.org/10.1109/BIBM66473.2025.11356680"
+  pdf: ""
+  code: ""
+
+- id: arsc-2025
+  title: "Arsc: Automated Reconciliation for State Correctness of Cluster Management"
+  authors:
+    - "Hongjing Yu"
+    - "Chaoqun Li"
+    - "Tao Han"
+    - "Pengfei Hu"
+  conference: "IEEE ICDCS"
+  year: 2025
+  ccf: "B"
+  featured: false
+  url: "https://doi.org/10.1109/ICDCS63083.2025.00015"
+  pdf: ""
+  code: ""
+
+- id: moodrll-2025
+  title: "mooDRLL: An online offloading scheme for MEC network computing tasks based on deep reinforcement learning and LSTM"
+  authors:
+    - "Yicheng Wang"
+    - "Chaoqun Li"
+    - "Pengfei Hu*"
+  conference: "High-Confidence Computing"
+  year: 2025
+  featured: false
+  url: "https://doi.org/10.1016/j.hcc.2025.100372"
+  pdf: ""
+  code: ""
