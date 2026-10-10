@@ -1,13 +1,12 @@
-- name: "异构加速器统一通信库"
+- name: "异构加速器统一通信研究"
   id: hux
-  subtitle: "HUX (Heterogeneous Unified eXchange) · 前身 HMC"
-  description: "围绕异构算力协同与大模型推理，团队持续积累跨厂商互联、显存直传、流水线传输与拥塞控制技术，构建连接 CPU 与多厂商 GPU/XPU 的统一通信库，为单机及分布式人工智能系统提供高效、稳定的通信支撑。"
+  description: "围绕异构算力协同与大模型推理，研究跨厂商互联、显存直传、流水线传输与拥塞控制，为单机及分布式人工智能系统提供高效、稳定的通信支撑。同时探索 CPU/GPU 协同执行，减少集合通信对 GPU 计算资源的占用。"
   image: "https://i.ibb.co/KxgX01zH/conn.png"
   highlights:
     - "异构互联：统一连接 NVIDIA、AMD/海光、寒武纪、摩尔线程、昆仑芯等加速器"
     - "高效传输：结合显存直传与双缓冲流水线，减少数据搬运开销、提升传输效率"
     - "拥塞优化：结合细粒度流量拆分与自适应拥塞控制，提升网络竞争下的传输稳定性"
-    - "计算通信协同：通过异步批量传输与 GPU 流、事件协同，支持计算通信重叠"
+    - "计算通信协同：结合异步传输与 CPU/GPU 协同调度，减少通信等待对 GPU 计算资源的占用"
   tech_stack:
     - "C++"
     - "Python"
@@ -17,15 +16,15 @@
     - "RDMA"
   github: "https://github.com/IIC-SIG-MLsys/HUX"
   related_repositories:
-    - name: "HMC（前身）"
+    - name: "HMC"
       url: "https://github.com/IIC-SIG-MLsys/HMC"
   start_date: "2024-09"
   end_date: ""
   status: "active"
 
-- name: "DistKV：云原生KV Cache系统"
+- name: "云原生 KV Cache 系统研究"
   id: distkv
-  description: "面向大模型推理集群的分布式 KV Cache 基础设施，统一管理和复用推理缓存，减少重复预填充计算。通过控制与数据平面分离，支持从单机到 Kubernetes 集群的部署，并对接 vLLM 与 llm-d。"
+  description: "围绕大模型推理集群中的 KV Cache 管理与复用，研究分布式缓存组织、资源管理与服务协同，减少重复预填充计算。通过控制与数据平面分离，支撑从单机到 Kubernetes 集群的部署，并对接 vLLM 与 llm-d。"
   image: "/assets/img/projects/distkv-architecture.svg"
   highlights:
     - "灵活部署：支持单进程、多进程及 Kubernetes，兼容原生集群与 llm-d"
@@ -44,10 +43,9 @@
   end_date: ""
   status: "active"
 
-- name: "云原生多优先级带宽保障"
+- name: "云原生网络与带宽保障研究"
   id: beeqos
-  subtitle: "BeeQoS"
-  description: "面向 Kubernetes 集群的细粒度 QoS 与带宽管理系统，为不同优先级的业务提供自适应、可扩展的带宽保障。相关成果发表于 ACM WWW 2026。"
+  description: "面向 Kubernetes 集群，研究细粒度 QoS 与多优先级带宽管理，为混合业务提供自适应、可扩展的网络资源保障。相关成果发表于 ACM WWW 2026。"
   github: "https://github.com/IIC-SIG-MLsys/BeeQos"
   start_date: "2025-09"
   end_date: ""

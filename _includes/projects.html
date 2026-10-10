@@ -1,6 +1,6 @@
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="section-title">科研项目</h3>
+    <h3 class="section-title">研究方向</h3>
 
     {% for project in site.data.projects %}
     <div class="project-card project-{{ project.status }} mb-4">
@@ -11,17 +11,6 @@
           <p class="text-muted mb-0" style="font-size:0.85rem;">{{ project.subtitle }}</p>
           {% endif %}
         </div>
-      </div>
-
-      <div class="project-meta">
-        {% if project.start_date %}
-        <span class="project-period">{{ project.start_date }}{% if project.end_date and project.end_date != "" %} ~ {{ project.end_date }}{% else %} ~ 至今{% endif %}</span>
-        {% endif %}
-        {% if project.status == "active" %}
-        <span class="project-status">进行中</span>
-        {% elsif project.status == "released" %}
-        <span class="project-status project-status-done">已开源</span>
-        {% endif %}
       </div>
 
       {% if project.image %}

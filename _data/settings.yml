@@ -1,7 +1,7 @@
 menu:
 - {name: '人员', url: '/people'}
 - {name: '学术成果', url: '/publications'}
-- {name: '科研项目', url: '/projects'}
+- {name: '研究方向', url: '/projects'}
 
 teacher:
 - name: '胡鹏飞'
