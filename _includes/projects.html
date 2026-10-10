@@ -43,18 +43,6 @@
       </div>
       {% endif %}
 
-      {% if project.github %}
-      <div class="d-flex flex-wrap align-items-center gap-3 pt-3 border-top">
-        <a href="{{ project.github }}" target="_blank" rel="noopener" class="text-decoration-none" style="font-size:0.85rem;">
-          <i class="fab fa-github me-1"></i>{{ project.github | remove: "https://github.com/" }}
-        </a>
-        {% for repository in project.related_repositories %}
-        <a href="{{ repository.url }}" target="_blank" rel="noopener" class="text-decoration-none" style="font-size:0.85rem;">
-          <i class="fab fa-github me-1"></i>{{ repository.name }}
-        </a>
-        {% endfor %}
-      </div>
-      {% endif %}
     </div>
     {% endfor %}
   </div>
