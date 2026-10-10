@@ -23,10 +23,23 @@
   end_date: ""
   status: "active"
 
-- name: "分布式 KV Cache 系统"
+- name: "DistKV：云原生KV Cache系统"
   id: distkv
-  subtitle: "DistKV"
-  description: "面向大模型推理集群的分布式 KV Cache 基础设施，在多个推理实例与节点之间统一管理、卸载和复用 KV Cache，降低重复计算、缩短首 token 延迟。支持单机、多进程和 Kubernetes 集群部署，可与 vLLM 等主流推理引擎集成。"
+  description: "面向大模型推理集群的分布式 KV Cache 基础设施，统一管理和复用推理缓存，减少重复预填充计算。通过控制与数据平面分离，支持从单机到 Kubernetes 集群的部署，并对接 vLLM 与 llm-d。"
+  image: "/assets/img/projects/distkv-architecture.svg"
+  highlights:
+    - "灵活部署：支持单进程、多进程及 Kubernetes，兼容原生集群与 llm-d"
+    - "职责分离：控制平面管理资源与放置，I/O Worker 执行缓存读写和后台复制"
+    - "缓存池管理：统一管理内存与文件资源，支持运行时创建、移除缓存池"
+    - "可扩展架构：通过可插拔控制平面拓展 KV Cache 管理策略"
+  tech_stack:
+    - "Python"
+    - "Go"
+    - "Kubernetes"
+    - "Helm"
+    - "vLLM"
+    - "llm-d"
+  github: "https://github.com/IIC-SIG-MLsys/DistKV"
   start_date: "2026-04"
   end_date: ""
   status: "active"
