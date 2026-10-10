@@ -52,7 +52,6 @@
       {% assign preprint_total = site.data.preprints | size %}
       {% if preprint_total > 0 %}
         <h3 class="section-title">预印本</h3>
-        <p class="pub-summary">共 {{ preprint_total }} 篇预印本。</p>
         {% assign current_year = "" %}
         {% for preprint in site.data.preprints %}
           {% if preprint.year != current_year %}
