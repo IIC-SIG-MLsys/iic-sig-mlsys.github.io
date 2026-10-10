@@ -8,7 +8,7 @@
     </div>
     <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto gap-4">
       {% for item in site.data.settings.menu %}
-        <a class="nav-link-custom text-decoration-none" href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
+        <a class="nav-link-custom text-decoration-none{% if page.url contains item.url %} active{% endif %}" href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
       {% endfor %}
     </nav>
   </div>

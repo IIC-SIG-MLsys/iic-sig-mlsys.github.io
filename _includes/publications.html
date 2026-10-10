@@ -38,6 +38,12 @@
 
     {% else %}
     <h3 class="section-title">学术成果</h3>
+      {% assign lab_names = site.data.settings.teacher | map: "name_en" %}
+      {% assign student_names = site.data.settings.student | map: "name_en" %}
+      {% assign lab_names = lab_names | concat: student_names %}
+      {% assign pub_total = site.data.publications | size %}
+      {% assign pub_ccfa = site.data.publications | where: "ccf", "A" | size %}
+      <p class="pub-summary">共 {{ pub_total }} 篇，其中 CCF-A {{ pub_ccfa }} 篇。<strong>加粗</strong>为实验室成员，<span class="text-nowrap">*</span> 为通讯作者。</p>
       {% assign current_year = "" %}
       {% for pub in site.data.publications %}
         {% if pub.year != current_year %}
@@ -46,7 +52,7 @@
         {% endif %}
         <div class="publication-item">
           <div class="pub-title">{{ pub.title }}</div>
-          <div class="pub-authors">{{ pub.authors | join: ", " }}</div>
+          <div class="pub-authors">{% for author in pub.authors %}{% assign bare = author | remove: "*" | strip %}{% if lab_names contains bare %}<strong class="lab-member">{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
           <div class="pub-venue">
             <em>{{ pub.conference }} {{ pub.year }}</em>
             {% if pub.ccf %}<span class="ccf-badge">CCF {{ pub.ccf }}</span>{% endif %}
@@ -55,9 +61,9 @@
                 <span class="award-badge">{{ award }}</span>
               {% endfor %}
             {% endif %}
-            {% if pub.url != "" %}<a href="{{ pub.url }}" class="pub-link" target="_blank">论文链接</a>{% endif %}
-            {% if pub.pdf != "" %}<a href="{{ pub.pdf }}" class="pub-link" target="_blank">PDF</a>{% endif %}
-            {% if pub.code != "" %}<a href="{{ pub.code }}" class="pub-link" target="_blank">代码</a>{% endif %}
+            {% if pub.url and pub.url != "" %}<a href="{{ pub.url }}" class="pub-link" target="_blank">论文链接</a>{% endif %}
+            {% if pub.pdf and pub.pdf != "" %}<a href="{{ pub.pdf }}" class="pub-link" target="_blank">PDF</a>{% endif %}
+            {% if pub.code and pub.code != "" %}<a href="{{ pub.code }}" class="pub-link" target="_blank">代码</a>{% endif %}
           </div>
         </div>
       {% endfor %}

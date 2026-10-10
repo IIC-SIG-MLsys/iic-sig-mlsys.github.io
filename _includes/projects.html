@@ -3,7 +3,7 @@
     <h3 class="section-title">科研项目</h3>
 
     {% for project in site.data.projects %}
-    <div class="project-card mb-4">
+    <div class="project-card project-{{ project.status }} mb-4">
       <div class="d-flex flex-wrap align-items-start justify-content-between mb-1">
         <div>
           <h4 class="fw-bold mb-1">{{ project.name }}</h4>
@@ -19,6 +19,8 @@
         {% endif %}
         {% if project.status == "active" %}
         <span class="project-status">进行中</span>
+        {% elsif project.status == "released" %}
+        <span class="project-status project-status-done">已开源</span>
         {% endif %}
       </div>
 
