@@ -69,6 +69,8 @@ student:
   research:
     - '边缘计算'
     - '任务调度'
+    - '异构计算'
+    - '物联网'
   email: 'chaoqunli@mail.sdu.edu.cn'
   url: 'https://supergroupli.github.io/chaoqunli/'
 
@@ -77,8 +79,9 @@ student:
   title: '2024级博士生'
   level: '博士生'
   research:
-    - 'MLsys'
-    - 'GPU通信'
+    - '人工智能系统'
+    - 'GPU 通信'
+    - '云原生网络'
   email: 'jacelau@mail.sdu.edu.cn'
   url: 'https://seclee.com'
 
@@ -89,6 +92,8 @@ student:
   research:
     - '网络配置'
     - '机器学习'
+    - '流量分类'
+    - '联邦学习'
   email: 'lishaowei6208@mail.sdu.edu.cn'
   url: ''
 
@@ -96,7 +101,10 @@ student:
   name_en: 'Hongjing Yu'
   title: '2025级博士生'
   level: '博士生'
-  research: []
+  research:
+    - '分布式存储'
+    - '纠删码'
+    - '集群管理'
   email: 'yuhj@mail.sdu.edu.cn'
   url: ''
 
@@ -104,7 +112,10 @@ student:
   name_en: 'Dingyi Jia'
   title: '2025级博士生'
   level: '博士生'
-  research: []
+  research:
+    - '分布式存储'
+    - '纠删码'
+    - '存储性能优化'
   email: '202521596@mail.sdu.edu.cn'
   url: ''
 
@@ -112,7 +123,10 @@ student:
   name_en: 'Zhisen Zhang'
   title: '2026级博士生'
   level: '博士生'
-  research: []
+  research:
+    - '人工智能系统'
+    - 'KV Cache'
+    - '异构计算'
   email: ''
   url: ''
 
@@ -120,7 +134,10 @@ student:
   name_en: 'Tao Luo'
   title: '2026级博士生'
   level: '博士生'
-  research: []
+  research:
+    - '人工智能系统'
+    - '人工智能安全'
+    - '联邦学习'
   email: ''
   url: ''
 
@@ -128,7 +145,8 @@ student:
   name_en: 'Haoyuan Ma'
   title: '2024级硕士生'
   level: '硕士生'
-  research: []
+  research:
+    - 'KV Cache 压缩'
   email: ''
   url: ''
 
@@ -169,7 +187,9 @@ student:
   name_en: 'Shuai Bai'
   title: '2025级硕士生'
   level: '硕士生'
-  research: []
+  research:
+    - 'GPU 通信'
+    - '算子优化'
   email: ''
   url: ''
 
