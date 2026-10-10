@@ -24,19 +24,20 @@
 
 - name: "云原生 KV Cache 系统研究"
   id: distkv
-  description: "围绕大模型推理集群中的 KV Cache 管理与复用，研究分布式缓存组织、资源管理与服务协同，减少重复预填充计算。通过控制与数据平面分离，支撑从单机到 Kubernetes 集群的部署，并对接 vLLM 与 llm-d。"
+  description: "面向大模型推理中的缓存复用、压缩与 I/O 瓶颈，研究云原生 KV Cache 资源管理与优化。围绕 vLLM、SGLang 等推理框架及 llm-d 分布式部署，协同优化缓存存储、传输与服务调度，降低首 Token 时延和重复计算，提升单位缓存资源的服务能力。"
   image: "/assets/img/projects/distkv-architecture.svg"
   highlights:
-    - "灵活部署：支持单进程、多进程及 Kubernetes，兼容原生集群与 llm-d"
-    - "职责分离：控制平面管理资源与放置，I/O Worker 执行缓存读写和后台复制"
-    - "缓存池管理：统一管理内存与文件资源，支持运行时创建、移除缓存池"
-    - "可扩展架构：通过可插拔控制平面拓展 KV Cache 管理策略"
+    - "缓存复用：研究跨请求、跨实例的缓存共享与生命周期管理，兼顾容量管理与租户隔离"
+    - "压缩优化：研究无损与有损 KV Cache 压缩，兼顾模型质量、缓存容量与传输效率"
+    - "部署协同：研究混合部署与缓存资源调度，优化分布式推理吞吐与资源利用率"
+    - "存储与传输：探索分层存储、CXL 等新介质与 uGDS 等传输路径，降低缓存 I/O 开销"
   tech_stack:
     - "Python"
     - "Go"
     - "Kubernetes"
     - "Helm"
     - "vLLM"
+    - "SGLang"
     - "llm-d"
   github: "https://github.com/IIC-SIG-MLsys/DistKV"
   start_date: "2026-04"
