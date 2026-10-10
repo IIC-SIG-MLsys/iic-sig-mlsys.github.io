@@ -1,0 +1,50 @@
+- id: fgrpo-2026
+  title: "FGRPO: Federated GRPO with Adaptive Aggregation on Non-IID Data"
+  authors:
+    - "Pengyu Chen"
+    - "Shaowei Li"
+    - "Kai Wang"
+    - "Yunsheng Yuan"
+    - "Kai Han"
+    - "Jun Luo"
+    - "Feng Li"
+  conference: "arXiv:2606.03094"
+  year: 2026
+  url: "https://arxiv.org/abs/2606.03094"
+  pdf: "https://arxiv.org/pdf/2606.03094"
+  code: ""
+
+- id: deca-2026
+  title: "DECA: Decentralizing Block-Wise Adam for Efficient LLM Full-Parameter Fine-Tuning on Non-IID Data"
+  authors:
+    - "Yunsheng Yuan"
+    - "Shaowei Li"
+    - "Kai Wang"
+    - "Zhongyuan Sun"
+    - "Zheng Zhang"
+    - "Kai Han"
+    - "Jun Luo"
+    - "Feng Li"
+  conference: "arXiv:2606.03209"
+  year: 2026
+  url: "https://arxiv.org/abs/2606.03209"
+  pdf: "https://arxiv.org/pdf/2606.03209"
+  code: ""
+
+- id: voxanchor-2026
+  title: "VoxAnchor: Grounding Speech Authenticity in Throat Vibration via mmWave Radar"
+  authors:
+    - "Mingda Han"
+    - "Huanqi Yang"
+    - "Chaoqun Li"
+    - "Wenhao Li"
+    - "Guoming Zhang"
+    - "Yanni Yang"
+    - "Yetong Cao"
+    - "Weitao Xu"
+    - "Pengfei Hu"
+  conference: "arXiv:2603.27562"
+  year: 2026
+  url: "https://arxiv.org/abs/2603.27562"
+  pdf: "https://arxiv.org/pdf/2603.27562"
+  code: ""

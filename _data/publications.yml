@@ -1,3 +1,23 @@
+- id: ramp-net-2026
+  title: "Reinforcement-Guided Adaptive Manifold Perturbation Framework for Robust AI-Generated Text Detection"
+  authors:
+    - "Chaoqun Li"
+    - "Tao Luo"
+    - "Keyuan Qiu"
+    - "Zhejie Xu"
+    - "Jinyao Liu"
+    - "Wenhao Li*"
+    - "Si Wu"
+    - "Feng Li"
+    - "Pengfei Hu*"
+  conference: "IEEE TDSC"
+  year: 2026
+  ccf: "A"
+  featured: false
+  url: "https://doi.org/10.1109/TDSC.2026.3716942"
+  pdf: ""
+  code: ""
+
 - id: fedrff-2026
   title: "FedRFF: Enhanced Federated Random Fourier Feature Framework for IoT Anomaly Detection"
   authors:
@@ -234,21 +254,6 @@
   awards: ["Best Presentation Award"]
   featured: true
   url: "https://ieeexplore.ieee.org/document/11183745"
-  pdf: ""
-  code: ""
-
-- id: leveled-2025
-  title: "Leveled Product Codes for Optimal Block Repairs in Geo-distributed Storage Systems"
-  authors:
-    - "Si Wu"
-    - "Guantian Lin"
-    - "Patrick P. C. Lee"
-    - "Yinlong Xu"
-  conference: "IEEE INFOCOM"
-  year: 2025
-  ccf: "A"
-  featured: false
-  url: "https://ieeexplore.ieee.org/abstract/document/11044776"
   pdf: ""
   code: ""
 

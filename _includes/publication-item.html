@@ -1,0 +1,17 @@
+{% assign pub = include.pub %}
+<div class="publication-item">
+  <div class="pub-title">{{ pub.title }}</div>
+  <div class="pub-authors">{% for author in pub.authors %}{% assign bare = author | remove: "*" | strip %}{% if lab_names contains bare %}<strong class="lab-member">{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
+  <div class="pub-venue">
+    <em>{{ pub.conference }} {{ pub.year }}</em>
+    {% if pub.ccf %}<span class="ccf-badge">CCF {{ pub.ccf }}</span>{% endif %}
+    {% if pub.awards %}
+      {% for award in pub.awards %}
+        <span class="award-badge">{{ award }}</span>
+      {% endfor %}
+    {% endif %}
+    {% if pub.url and pub.url != "" %}<a href="{{ pub.url }}" class="pub-link" target="_blank">论文链接</a>{% endif %}
+    {% if pub.pdf and pub.pdf != "" %}<a href="{{ pub.pdf }}" class="pub-link" target="_blank">PDF</a>{% endif %}
+    {% if pub.code and pub.code != "" %}<a href="{{ pub.code }}" class="pub-link" target="_blank">代码</a>{% endif %}
+  </div>
+</div>
