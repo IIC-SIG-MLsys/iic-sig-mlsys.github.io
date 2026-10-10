@@ -1,13 +1,13 @@
 - name: "异构加速器统一通信库"
   id: hux
   subtitle: "HUX (Heterogeneous Unified eXchange) · 前身 HMC"
-  description: "面向异构 AI 加速器的统一数据传输引擎，以一致接口连接 CPU 与多厂商 GPU/XPU，覆盖单机和跨节点通信，为人工智能系统提供通信基础。由 HMC 演进而来，HUX 支持直接注册应用内存，减少中间缓冲拷贝。"
+  description: "面向异构 AI 加速器的统一通信库，连接 CPU 与多厂商 GPU/XPU，覆盖单机和跨节点传输。基于前期 UHM/HMC 的异构显存直传、流水线与抗拥塞优化积累，HUX 进一步支持应用内存直接注册及异步传输，为人工智能系统提供高效通信基础。"
   image: "https://i.ibb.co/KxgX01zH/conn.png"
   highlights:
     - "跨厂商互联：支持 NVIDIA、AMD/海光、寒武纪、摩尔线程、昆仑芯"
-    - "统一传输：按设备与拓扑选择 RDMA、UCX 或进程间通信路径"
+    - "异构传输提速：前期 UHM 测试中，寒武纪、海光、NVIDIA 六向互传较 UCX/G2H2G 方案平均延迟降低 38.1%–87.2%"
+    - "抗网络竞争：前期 HMC 测试中，Llama-3.1-8B 的 4 GB KV Cache 传输在拥塞下延迟增幅约 7%，UCX 对照约 17.1%"
     - "异步协同：批量读写结合 GPU 流与事件，支持计算通信重叠"
-    - "便捷集成：提供 C++ 与 Python 接口，对接应用已有内存"
   tech_stack:
     - "C++"
     - "Python"
