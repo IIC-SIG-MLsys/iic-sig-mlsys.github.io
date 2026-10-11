@@ -68,3 +68,31 @@ layout: default
 </div>
 {% endif %}
 {% endfor %}
+
+{% if site.data.settings.alumni.size > 0 %}
+<h3 class="section-title mt-5">毕业生</h3>
+{% assign alumni_by_year = site.data.settings.alumni | sort: "graduation_year" | reverse | group_by: "graduation_year" %}
+{% for year in alumni_by_year %}
+<h4 class="people-group">{{ year.name }} 届<span class="people-count">{{ year.items.size }}</span></h4>
+{% assign graduates = year.items | sort: "degree" %}
+<ul class="alumni-list">
+  {% for person in graduates %}
+  <li class="alumni-item">
+    <div class="alumni-heading">
+      <div class="student-name">
+        {% if person.url and person.url != "" and person.url != "/" %}<a href="{{ person.url | escape }}" target="_blank" rel="noopener">{{ person.name | escape }}</a>{% else %}{{ person.name | escape }}{% endif %}
+        {% if person.name_en %}<span class="student-name-en">{{ person.name_en | escape }}</span>{% endif %}
+      </div>
+      <span class="alumni-degree">{{ person.degree | escape }}</span>
+    </div>
+    {% if person.destination and person.destination != "" %}
+    <p class="alumni-destination">去向：{{ person.destination | escape }}{% if person.position and person.position != "" %} · {{ person.position | escape }}{% endif %}</p>
+    {% endif %}
+    {% if person.research.size > 0 %}
+    <p class="alumni-research">研究方向：{{ person.research | join: " · " | escape }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+{% endif %}

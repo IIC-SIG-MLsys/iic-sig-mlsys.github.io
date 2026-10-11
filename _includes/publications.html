@@ -40,7 +40,8 @@
     <h3 class="section-title">学术成果</h3>
       {% assign lab_names = site.data.settings.teacher | map: "name_en" %}
       {% assign student_names = site.data.settings.student | map: "name_en" %}
-      {% assign lab_names = lab_names | concat: student_names %}
+      {% assign alumni_names = site.data.settings.alumni | map: "name_en" %}
+      {% assign lab_names = lab_names | concat: student_names | concat: alumni_names %}
       {% assign current_year = "" %}
       {% for pub in site.data.publications %}
         {% if pub.year != current_year %}

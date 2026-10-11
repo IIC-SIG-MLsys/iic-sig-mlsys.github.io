@@ -502,6 +502,43 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.15rem;
 }
 
+.alumni-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  border: 1px solid $border;
+  border-radius: $radius;
+  background: $bg;
+}
+
+.alumni-item {
+  padding: 1rem;
+  overflow-wrap: anywhere;
+
+  & + & { border-top: 1px solid $border; }
+}
+
+.alumni-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+}
+
+.alumni-degree {
+  font-size: 0.8rem;
+  color: $muted;
+}
+
+.alumni-destination,
+.alumni-research {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin: 0.35rem 0 0;
+}
+
+.alumni-research { color: $muted; }
+
 .student-email {
   display: block;
   font-size: 0.76rem;

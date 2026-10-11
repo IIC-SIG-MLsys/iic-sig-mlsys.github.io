@@ -249,4 +249,10 @@ student:
   email: ''
   url: ''
 
+# 毕业后离组的成员移入 alumni；留组读博的成员继续保留在 student。
+# 必填：name、name_en、degree（博士/硕士）、graduation_year（数字年份）。
+# 可选：destination（公开去向）、position（岗位/发展方向）、research、url。
+# 入组年份 join_year、导师 advisor 可记录在数据中，不在页面展示。
+alumni: []
+
 social: []
