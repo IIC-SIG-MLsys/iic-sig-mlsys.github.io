@@ -32,17 +32,6 @@
       </div>
       {% endif %}
 
-      {% if project.tech_stack %}
-      <div class="mb-3">
-        <strong class="d-block mb-2" style="font-size:0.82rem;color:#64748b;"><i class="fas fa-wrench me-1" style="font-size:0.78rem;"></i>技术栈</strong>
-        <div class="d-flex flex-wrap gap-2">
-          {% for tech in project.tech_stack %}
-          <span class="tech-badge">{{ tech }}</span>
-          {% endfor %}
-        </div>
-      </div>
-      {% endif %}
-
     </div>
     {% endfor %}
   </div>
